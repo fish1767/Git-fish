@@ -20,7 +20,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Build with Maven
-        run: echo "mvn compile"
+        run: mvn --batch-mode --update-snapshots package
 
       - name: Run tests
-        run: echo "mvn test"
+        run: mvn --batch-mode --update-snapshots JunitTest
