@@ -19,7 +19,7 @@ jobs:
           java-version: 11
 
       - name: Build with Maven
-        run: echo "mvn compile"
+        run: echo "mvn package"
 
       - name: Run tests
         run: echo "mvn test"
